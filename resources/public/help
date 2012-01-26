@@ -3,5 +3,25 @@ example rest api for using-set-theory
 this api is designed to highlight some uses of set theory in a real app. all urls
 return json unless otherwise noted.
 
+a note on the book format:
+a book is a json object in the form
+  { "title" : <book title as a string>,
+    "authors": [<a list of the book authors as strings>],
+    "summary": <a summary of the book as a string>,
+    "formats": [the supported formats as a list of strings] }
+
+
 urls:
-	/api			gets the api version
+	/api			    gets the api version
+	/api/books		    get the list of all books in the sample library
+	/api/books/titles	    get a list of all the titles in the sample library
+	/api/books/title/:title     get the book with the title :title
+	/api/books/formats	    get a list of supported formats
+	/api/books/format/:format   get a list of all books in the :format format
+
+implemented:
+the server is still under development. here's what works:
+
+    /api
+    /api/books
+    /api/books/formats/:format
