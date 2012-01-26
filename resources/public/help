@@ -16,11 +16,17 @@ urls:
 	/api/books		    get the list of all books in the sample library
 	/api/books/titles	    get a list of all the titles in the sample library
 	/api/books/title/:title     get the book with the title :title
-	/api/books/formats	    get a list of supported formats
+	/api/books/formats	    no parameters: get a list of supported formats
+				    also supports the 'formats' and 'select' 
+				    parameters
 	/api/books/format/:format   get a list of all books in the :format format
 	/api/books/authors	    get a list of all authors in the library
 	/api/books/author/:author   get a list of all books by :author
 
+parameters:
+	formats: a comma-separated list of formats, ex. "epub,mobi,pdf"
+	select: how to build the subset. 'all' does an intersection, 'any' does
+	a union, and 'not' does a difference
 implemented:
 the server is still under development. here's what works:
 
