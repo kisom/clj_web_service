@@ -25,3 +25,4 @@ the server is still under development. here's what works:
     /api
     /api/books
     /api/books/formats/:format
+    /api/books/titles
