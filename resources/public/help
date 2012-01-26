@@ -20,19 +20,14 @@ urls:
 				    also supports the 'formats' and 'select' 
 				    parameters
 	/api/books/format/:format   get a list of all books in the :format format
-	/api/books/authors	    get a list of all authors in the library
-	/api/books/author/:author   get a list of all books by :author
+	/api/authors	    	    get a list of all authors in the library
+	/api/author/:author   	    get a list of all books by :author
+	/api/devices		    get a list of all devices the API knows about
+	/api/devices/:device	    get a list of all ebooks supported by :device
 
 parameters:
 	formats: a comma-separated list of formats, ex. "epub,mobi,pdf"
+
 	select: how to build the subset. 'all' does an intersection, 'any' does
 	a union, and 'not' does a difference
-implemented:
-the server is still under development. here's what works:
 
-    /api
-    /api/books
-    /api/books/formats
-    /api/books/format/:format
-    /api/books/titles
-    /api/books/title/:title
