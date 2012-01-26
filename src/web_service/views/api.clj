@@ -36,3 +36,14 @@
 (defpage "/api/books/title/:title" {:keys [title]}
   (json-out
    (filter #(= title (:title %)) (get-library))))
+
+(defpage "/api/authors" []
+  (json-out
+   (set
+    (reduce #'concat
+            (map :authors (get-library))))))
+
+(defpage "/api/author/:author" {:keys [author]}
+  (json-out
+   (filter #(in? (:authors %) author) (get-library))))
+
