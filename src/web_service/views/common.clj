@@ -1,6 +1,5 @@
 (ns web_service.views.common
   (:use [noir.core :only [defpartial defpage]]
-        [noir.response]
         [cheshire.core]
         [using_set_theory.sample_library])
   (:require [clojure.string]))
