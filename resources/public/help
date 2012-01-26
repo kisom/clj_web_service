@@ -1,0 +1,7 @@
+example rest api for using-set-theory
+
+this api is designed to highlight some uses of set theory in a real app. all urls
+return json unless otherwise noted.
+
+urls:
+	/api			gets the api version
