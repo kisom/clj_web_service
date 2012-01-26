@@ -9,6 +9,5 @@
   (let [books (get-library)]
     (println "\tloaded" (count books) "books.")
     (list-titles books "sample library:"))
-;    (let [mobi (filter 
   (println "done."))
 
