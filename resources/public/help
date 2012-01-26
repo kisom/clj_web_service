@@ -18,11 +18,15 @@ urls:
 	/api/books/title/:title     get the book with the title :title
 	/api/books/formats	    get a list of supported formats
 	/api/books/format/:format   get a list of all books in the :format format
+	/api/books/authors	    get a list of all authors in the library
+	/api/books/author/:author   get a list of all books by :author
 
 implemented:
 the server is still under development. here's what works:
 
     /api
     /api/books
-    /api/books/formats/:format
+    /api/books/formats
+    /api/books/format/:format
     /api/books/titles
+    /api/books/title/:title
