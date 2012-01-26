@@ -2,10 +2,7 @@
   (:use [noir.core :only [defpartial defpage]]
         [web_service.views.common]
         [using_set_theory.library :only [book-str in? ]]
-        [using_set_theory.sample_library])
-  (:require [clojure.string]
-            [cheshire.core :as json])
-  (:import [using_set_theory.library.Book]))
+        [using_set_theory.sample_library]))
 
 (defn filter-format
   "Filter books to a given format."
