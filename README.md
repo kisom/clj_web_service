@@ -1,6 +1,6 @@
 # web_service
 
-A website written in noir. 
+A simple illustration of set theory in action, using a web API as the medium.
 
 ## Usage
 
@@ -15,6 +15,9 @@ If you don't have leiningen installed, take a look at
 
 The fast start is to download [lein](https://raw.github.com/technomancy/leiningen/stable/bin/lein),
 make it executable, put it in your path, and then follow the usage steps above.
+
+## Caveats
+There are no tests in the code. I really should add some in...
 
 ## License
 
