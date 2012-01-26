@@ -19,6 +19,11 @@
   (let [books (get-library)]
     (json-out books)))
 
+(defpage "/api/books/formats" []
+  (let [formats (set
+                 (reduce #'concat
+                         (map :formats (get-library))))]
+    (json-out formats)))
 
 (defpage "/api/books/format/:fmt" {:keys [fmt]}
   (json-out
