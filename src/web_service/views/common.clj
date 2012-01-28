@@ -14,8 +14,8 @@
 (defn json-out
   "Output a string as json plaintext."
   [body & args]
-  (noir.response/json body))
-;  (text-out (cheshire.core/generate-string body)))
+  (noir.response/content-type "application/json"
+                              (generate-string body)))
 
 (defn multiline
   "Easy way to put together a bunch of strings."
