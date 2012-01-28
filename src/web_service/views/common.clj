@@ -4,7 +4,7 @@
   (:require [clojure.string]
             [noir.response]))
 
-(def version "1.0.0")
+(def version "1.0.2")
 
 (defn text-out
   "Output a string as text/plain."

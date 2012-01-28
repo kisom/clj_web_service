@@ -1,4 +1,4 @@
-(defproject web_service "0.1.0-SNAPSHOT"
+(defproject web_service "1.0.2"
             :description "Illustrating 'Using Set Theory' with a web API."
             :dependencies [[org.clojure/clojure "1.3.0"]
                            [noir "1.2.1"]
