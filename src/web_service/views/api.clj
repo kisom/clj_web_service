@@ -83,7 +83,9 @@
     (reduce #'concat
             (map :authors (get-library))))))
 
-(defpage "/api/author/:author" {:keys [author]}
+;; if we don't include the regex'd capture, authors with initials won't be found,
+;; as the capture stops on periods without a regex
+(defpage [:get ["/api/author/:author" :author #"[\w\.\s+]+"]] {:keys [author]}
   (json-out
    (filter #(in? (:authors %) author) (get-library))))
 
