@@ -37,7 +37,7 @@
                 "a variety of problems.")
            [ :pdf ])
     (Book. "Introduction to Information Retrieval"
-           ["Christopher D. Manning" "Prabhakar Raghavan" "Hunrich Schütze"]
+           ["Christopher D. Manning" "Prabhakar Raghavan" "Hunrich Schutze"]
            (str "Teaches web-era information retrieval, including web search "
                 "and the related areas of text classification and text "
                 "clustering from basic concepts.")
