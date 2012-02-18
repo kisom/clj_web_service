@@ -2,6 +2,9 @@
 
 A simple illustration of set theory in action, using a web API as the medium.
 
+## Test Status
+[![Build Status](https://secure.travis-ci.org/kisom/clj_web_service.png?branch=master)](http://travis-ci.org/kisom/clj_web_service)
+
 ## Usage
 
 ```bash
