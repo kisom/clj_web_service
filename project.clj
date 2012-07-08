@@ -5,4 +5,3 @@
                            [hiccup "0.3.8"]
                            [cheshire "2.0.6"]]
             :main web_service.server)
-
